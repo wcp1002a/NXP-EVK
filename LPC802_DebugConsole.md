@@ -22,3 +22,5 @@
 
 ## Note
     記得將Baudrate設為9600
+![LPC802_EVK](/LPC802_cn.png)
+GND CN3.6, CN3.7, CN5.5 CN7.4
