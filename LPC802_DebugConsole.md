@@ -20,5 +20,5 @@
     /* USART0_RXD connect to P0_0 */
     SWM_SetMovablePinSelect(SWM0, kSWM_USART0_RXD, kSWM_PortPin_P0_0);
 
-## Add title
-    SublimeText commit test
+## Note
+    記得將Baudrate設為9600
