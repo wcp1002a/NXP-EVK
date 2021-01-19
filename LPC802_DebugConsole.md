@@ -4,12 +4,12 @@
 
 # 加入程式
 ## 主程式
-#include fsl_debug_console.h
-main()
-{
-    BOARD_InitDebugConsole();
-    PRINTF("TEST\r\n");
-}
+    #include fsl_debug_console.h
+    main()
+    {
+        BOARD_InitDebugConsole();
+        PRINTF("TEST\r\n");
+    }
 ## pin_mux.c
     #include "fsl_swm_connections.h"
     CLOCK_EnableClock(kCLOCK_Swm);
