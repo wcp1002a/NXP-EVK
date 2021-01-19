@@ -21,3 +21,4 @@
     SWM_SetMovablePinSelect(SWM0, kSWM_USART0_RXD, kSWM_PortPin_P0_0);
 
 ## Add title
+    SublimeText commit test
