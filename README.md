@@ -2,60 +2,44 @@
 
 ### Table of Contents
 
-* [Hello AI World](#hello-ai-world)
-* [Video Walkthroughs](#video-walkthroughs)
-* [API Reference](#api-reference)
-* [Code Examples](#code-examples)
-* [Pre-Trained Models](#pre-trained-models)
-* [System Requirements](#recommended-system-requirements)
-* [Change Log](CHANGELOG.md)
+* [LPC802 EVK](#lpc802-evk)
+* [i.MXRT 1010 EVK](#imxrt-1010-evk)
 
-> &gt; &nbsp; [Jetson Nano 2GB](https://developer.nvidia.com/embedded/jetson-nano-2gb-developer-kit) and JetPack 4.4.1 is now supported in the repo. <br/>
-> &gt; &nbsp; Try the new [Re-training SSD-Mobilenet](docs/pytorch-ssd.md) object detection tutorial! <br/>
-> &gt; &nbsp; See the [Change Log](CHANGELOG.md) for the latest updates and new features. <br/>
+## LPC802 EVK
 
-## Hello AI World
+### Debugger
+#### Use LPCLink2 to debug LPC802 EVK
+LPCLink2  JP1 short, JP2 open, 轉接板接J7
+LPC802EVK JP4 short
+LPCLink2        LPC802EVK
+J1.1    VCC CN5.6
+J1.2    GND CN5.5
+J1.5    SWDIO   CN4.8
+J1.7    SWDCK   CN4.7
 
-Hello AI World can be run completely onboard your Jetson, including inferencing with TensorRT and transfer learning with PyTorch.  The inference portion of Hello AI World - which includes coding your own image classification and object detection applications for Python or C++, and live camera demos - can be run on your Jetson in roughly two hours or less, while transfer learning is best left to leave running overnight.
+#### Use RT1010 EVK to debug LPC802 EVK
+RT1010      LPC802EVK
+J57.16  VCC CN5.6
+J57.14  GND CN5.5
+J61.1   SWDIO   CN4.8
+J62.1   SWDCK   CN4.7
+J31.1   <-RX TX->   MCU TX
+J32.1   <-TX RX->   MCU RX
 
-#### System Setup
+#### Flash Magic
+HEX file                
+    在MCUXpresso產生出的axf檔案上按右鍵→Binary Utility→Create hex          
+                
+進入ISP(In-System Programming)模式              
+    將ISP拉到Low並RESET         
+    以LPC802EVK為例，按下ISP button不放，再按下RESET鍵           
+                
+UART                
+LPC802EVK           PC
+CN4.6   PIO0_4_TXD_SCK      RX
+CN5.2   PIO0_0_RXD      TX
 
-* [Setting up Jetson with JetPack](docs/jetpack-setup-2.md)
-* [Running the Docker Container](docs/aux-docker.md)
-* [Building the Project from Source](docs/building-repo-2.md)
+## i.MXRT 1010 EVK
 
-#### Inference
+i.MXRT 1010 introduction
 
-* [Classifying Images with ImageNet](docs/imagenet-console-2.md)
-	* [Using the ImageNet Program on Jetson](docs/imagenet-console-2.md)
-	* [Coding Your Own Image Recognition Program (Python)](docs/imagenet-example-python-2.md)
-	* [Coding Your Own Image Recognition Program (C++)](docs/imagenet-example-2.md)
-	* [Running the Live Camera Recognition Demo](docs/imagenet-camera-2.md)
-* [Locating Objects with DetectNet](docs/detectnet-console-2.md)
-	* [Detecting Objects from Images](docs/detectnet-console-2.md#detecting-objects-from-the-command-line)
-	* [Running the Live Camera Detection Demo](docs/detectnet-camera-2.md)
-	* [Coding Your Own Object Detection Program](docs/detectnet-example-2.md)
-* [Semantic Segmentation with SegNet](docs/segnet-console-2.md)
-	* [Segmenting Images from the Command Line](docs/segnet-console-2.md#segmenting-images-from-the-command-line)
-	* [Running the Live Camera Segmentation Demo](docs/segnet-camera-2.md)
-
-#### Training
-
-* [Transfer Learning with PyTorch](docs/pytorch-transfer-learning.md)
-* Classification/Recognition (ResNet-18)
-	* [Re-training on the Cat/Dog Dataset](docs/pytorch-cat-dog.md)
-	* [Re-training on the PlantCLEF Dataset](docs/pytorch-plants.md)
-	* [Collecting your own Classification Datasets](docs/pytorch-collect.md)
-* Object Detection (SSD-Mobilenet)
-	* [Re-training SSD-Mobilenet](docs/pytorch-ssd.md)
-	* [Collecting your own Detection Datasets](docs/pytorch-collect-detection.md)
-
-#### Appendix
-
-* [Camera Streaming and Multimedia](docs/aux-streaming.md)
-* [Image Manipulation with CUDA](docs/aux-image.md)
-* [Deep Learning Nodes for ROS/ROS2](https://github.com/dusty-nv/ros_deep_learning)
-
-## Video Walkthroughs
-
-Below are screencasts of Hello AI World that were recorded for the [Jetson AI Certification](https://developer.nvidia.com/embedded/learn/jetson-ai-certification-programs) course:
