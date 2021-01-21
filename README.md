@@ -11,11 +11,13 @@
 #### Use LPCLink2 to debug LPC802 EVK
 LPCLink2  JP1 short, JP2 open, 轉接板接J7
 LPC802EVK JP4 short
-LPCLink2        LPC802EVK
-J1.1    VCC CN5.6
-J1.2    GND CN5.5
-J1.5    SWDIO   CN4.8
-J1.7    SWDCK   CN4.7
+
+LPCLink2    |LPC802EVK
+------------|----------------
+J1.1        |VCC CN5.6
+J1.2        |GND CN5.5
+J1.5        |SWDIO   CN4.8
+J1.7        |SWDCK   CN4.7
 
 #### Use RT1010 EVK to debug LPC802 EVK
 RT1010      LPC802EVK
