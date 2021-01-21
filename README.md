@@ -49,11 +49,12 @@ CN5.2       | PIO0_0_RXD        | TX
 
 #### Use JLINK
 Use JFlashLite to update firmware via SWD interface.
+
 使用JLINK所帶的JFlashLite透過SWD來燒錄
 #### MCUXpresso GUI Flash Tool
-MCUXpresso GUI Flash Tool
-General Options, Click Preview Command
-Copy command from Commandto be executed...
+MCUXpresso GUI Flash Tool  
+General Options, Click Preview Command  
+Copy command from Commandto be executed...  
 
 ## i.MX RT1010 EVK
 i.MXRT 1010 introduction
