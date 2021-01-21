@@ -6,7 +6,7 @@ Quick instructions for practical use of NXP EVK
 * [LPC802 EVK](#lpc802-evk)
     - [Debugger][lpc802-debugger]
     - [paul][]
-    - [paul]
+    - [paul](paul)
 * [i.MXRT 1010 EVK](#imxrt-1010-evk)
 
 [lpc802-debugger]:
