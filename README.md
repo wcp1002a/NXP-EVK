@@ -32,7 +32,7 @@ J32.1   | <-TX RX->   MCU RX
 
 #### Flash Magic
 * HEX file
-在MCUXpresso產生出的axf檔案上按右鍵 -> Binary Utility→Create hex
+在MCUXpresso產生出的axf檔案上按右鍵 -> Binary Utility -> Create hex
 * 進入ISP(In-System Programming)模式
 將ISP拉到Low並RESET  
 以LPC802EVK為例，按下ISP button不放，再按下RESET鍵
