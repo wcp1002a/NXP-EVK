@@ -12,6 +12,7 @@ Quick instructions for practical use of NXP EVK
 #### Use LPCLink2 to debug LPC802 EVK
 * LPCLink2: JP1 short, JP2 open, Use J7 for converter board
 * LC802EVK: JP4 short
+
 LPCLink2    | LPC802EVK
 ------------|----------------
 J1.1        | VCC CN5.6
