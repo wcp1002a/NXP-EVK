@@ -6,7 +6,7 @@ Quick instructions for practical use of NXP EVK
     - [Debugger](#debugger-lpc802)
 * [i.MX RT1010 EVK](#imx-rt1010-evk)
     - [Debugger](#debugger-rt1010)
-* [i.MX RT1050 EVK](#imx-rt10500evk)
+* [i.MX RT1050 EVK](#imx-rt1050-evk)
     - [Debugger](#debugger-rt1050)
 
 ## LPC802 EVK
