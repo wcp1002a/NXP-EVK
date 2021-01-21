@@ -10,15 +10,16 @@ Quick instructions for practical use of NXP EVK
 ## LPC802 EVK
 ### Debugger (lpc802)
 #### Use LPCLink2 to debug LPC802 EVK
+Hardware Connection  
+LPCLink2    | Signal Name   | LPC802EVK
+------------|---------------|-----------
+J1.1        | VCC           | CN5.6
+J1.2        | GND           | CN5.5
+J1.5        | SWDIO         | CN4.8
+J1.7        | SWDCK         | CN4.7
+
 * LPCLink2: JP1 short, JP2 open, Use J7 for converter board
 * LC802EVK: JP4 short  
-Hardware Connection  
-LPCLink2    | LPC802EVK
-------------|----------------
-J1.1        | VCC CN5.6
-J1.2        | GND CN5.5
-J1.5        | SWDIO   CN4.8
-J1.7        | SWDCK   CN4.7
 
 #### Use RT1010 EVK to debug LPC802 EVK
 Hardware Connection
