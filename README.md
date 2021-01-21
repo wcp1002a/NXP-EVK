@@ -6,6 +6,8 @@ Quick instructions for practical use of NXP EVK
     - [Debugger](#debugger-lpc802)
 * [i.MX RT1010 EVK](#imx-rt1010-evk)
     - [Debugger](#debugger-rt1010)
+* [i.MX RT1050 EVK](#imx-rt10500evk)
+    - [Debugger](#debugger-rt1050)
 
 ## LPC802 EVK
 ### Debugger (lpc802)
@@ -59,3 +61,32 @@ Copy command from Commandto be executed...
 ## i.MX RT1010 EVK
 i.MXRT 1010 introduction
 ### Debugger (RT1010)
+#### JLINK
+Hardware Connection
+RT1010 EVK  | Signal Name   | JLINK
+------------|---------------|------------
+J61.2       | SWD_DIO       | #7
+J62.2       | SWD CLK       | #9
+J55.1       | DCDC_3V3      | #1
+J55.3, J55.5| GND           | #4, #6, ...
+
+## i.MX RT1050 EVK
+i.MXRT 1050 introduction
+### Debugger (RT1050)
+#### JLINK OpenSDA
+JLINK       | Signal Name   | Custom Board
+------------|---------------|---------------
+ #7         | SWD_DIO       | SWD IO
+ #9         | SWD_CLK       | SWD CK
+ #1         | JTAG_VREF     | V3.3
+ #4, #6, ...| GND           | GND
+
+#### RT1050 EVK OpenSDA/UART
+RT1050 EVK  | Signal Name   | Custom Board
+------------|---------------|---------------
+J32.1       | SWD_DIO       | SWD IO
+J33.1       | SWD_CLK       | SWD CK
+J21.1       | JTAG_VREF     | V3.3
+J21.4       | GND           | GND
+J30.1       | UART_TX       | RX
+J31.1       | UART_RX       | TX
