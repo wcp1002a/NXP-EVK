@@ -12,7 +12,8 @@ Quick instructions for practical use of NXP EVK
 ## LPC802 EVK
 ### Debugger (lpc802)
 #### Use LPCLink2 to debug LPC802 EVK
-Hardware Connection  
+Hardware Connection
+
 LPCLink2    | Signal Name   | LPC802EVK
 ------------|---------------|-----------
 J1.1        | VCC           | CN5.6
@@ -25,6 +26,7 @@ J1.7        | SWDCK         | CN4.7
 
 #### Use RT1010 EVK to debug LPC802 EVK
 Hardware Connection
+
 RT1010  | Signal Name   | LPC802EVK
 --------|---------------|------------
 J57.16  | VCC           | CN5.6
@@ -44,6 +46,7 @@ __HEX file:__ 在MCUXpresso產生出的axf檔案上按右鍵 -> Binary Utility -
 __進入ISP(In-System Programming)模式:__ 將ISP拉到Low並RESET, 以LPC802EVK為例，按下ISP button不放，再按下RESET鍵
 
 UART Connection
+
 LPC802EVK   | Signal Name       | PC
 ------------|-------------------|-------
 CN4.6       | PIO0_4_TXD_SCK    | RX
@@ -63,6 +66,7 @@ i.MXRT 1010 introduction
 ### Debugger (RT1010)
 #### JLINK
 Hardware Connection
+
 RT1010 EVK  | Signal Name   | JLINK
 ------------|---------------|------------
 J61.2       | SWD_DIO       | #7
